@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scaling Labs</title>
+<meta name="description" content="Scaling Labs builds focused, affordable software for small businesses and independent professionals.">
+<meta property="og:title" content="Scaling Labs">
+<meta property="og:description" content="Focused, affordable software for small businesses and independent professionals.">
+<meta property="og:url" content="https://scalinglabs.si/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3a5f'/%3E%3Cpath d='M8 22l6-6 4 4 6-8' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1b1f24;
+    --muted: #5a6370;
+    --line: #e4e1da;
+    --accent: #1f3a5f;
+    --accent-soft: #e8eef6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151a;
+      --surface: #1a1e25;
+      --text: #e9ecf0;
+      --muted: #a2abb7;
+      --line: #2a303a;
+      --accent: #8fb3e3;
+      --accent-soft: #1f2a3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; font-size: 18px; letter-spacing: -0.01em; }
+  .mark { width: 28px; height: 28px; border-radius: 7px; background: var(--accent); display: grid; place-items: center; }
+  .mark svg { width: 18px; height: 18px; }
+  .hero { padding: 64px 0 40px; }
+  h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 18px; }
+  .lede { font-size: 19px; color: var(--muted); margin: 0; max-width: 620px; }
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 18px; font-weight: 600; }
+  .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.01em; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  .status { display: inline-block; margin-bottom: 10px; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 2px 9px; border-radius: 999px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .founder { font-weight: 600; }
+  footer { padding: 28px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 23l7-7 5 5 8-10" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      Scaling Labs
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Focused, affordable software for small businesses and independent professionals.</h1>
+      <p class="lede">In categories where the established tools have become expensive and overbuilt, we build products that do the core workflow well, at a lower price, with one-step import of your existing data.</p>
+    </div>
+
+    <section aria-labelledby="building">
+      <h2 id="building">What we're building</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="status">In development</span>
+          <h3>Appointment booking</h3>
+          <p>A self-hostable booking system for service businesses.</p>
+        </div>
+        <div class="card">
+          <span class="status">In development</span>
+          <h3>Spreadsheet add-in for analysts</h3>
+          <p>A productivity add-in for financial analysts who work in spreadsheets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how">
+      <h2 id="how">How we build</h2>
+      <p>We build with Claude Code. Every non-trivial change passes an independent Claude Opus review before it merges.</p>
+    </section>
+
+    <section aria-labelledby="team">
+      <h2 id="team">Founders</h2>
+      <p>Scaling Labs was started in June 2026 by two co-founders in the San Francisco Bay Area.</p>
+      <p><span class="founder">Anupam Singh</span>, Co-founder</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p><a href="mailto:anupam@scalinglabs.si">anupam@scalinglabs.si</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 Scaling Labs &middot; San Francisco Bay Area, California</div>
+  </footer>
+</body>
+</html>
